@@ -1,5 +1,6 @@
 #!/bin/bash
 # Script written by Derek DeMoss (github.com/derekcat) for Dark Horse Comics, Inc. 2015
+# Intended to be run by NRPE for a Nagios check
 
 # Make a list of OpenDirectory Users
 ODUSERS="$(dscl /LDAPv3/127.0.0.1 -list /Users | grep -v vpn | grep -v ldap)"
